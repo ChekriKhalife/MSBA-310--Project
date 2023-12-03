@@ -1,0 +1,6 @@
+ID,Name,Job,Marital Status,Education Level,Housing Loan,Personal Loan,Contact Communication Type,Month of last contact,Day of the month of the last contact,Duration of last contact (s),Campaign Contacts Count,Previous: Number of days passed since previously contacted,Previous Campaign Outcome,Phone Number
+1,Chekri Khalife,admin,married,tertiary,yes,no,cellular,may,15,130,1,4,unknown,81/739/239
+2,Adam Salha,technician,single,secondary,no,yes,telephone,jun,3,220,2,2,failure,81/723/635
+3,Houssem Chbichib,entrepreneur,divorced,tertiary,yes,no,unknown,jul,21,185,1,1,other,78/927/392
+4,Imad Abou Hamad,blue-collar,married,primary,yes,no,cellular,aug,26,340,3,2,success,70/987/654
+5,Kanz Mroueh,unknown,single,unknown,no,yes,telephone,sep,30,45,2,3,unknown,76/524/321
