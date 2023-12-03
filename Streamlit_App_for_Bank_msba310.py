@@ -27,7 +27,7 @@ st.markdown("""
 """)
 
 # Logistic Regression Coefficients
-# Logistic Regression Coefficients
+
 coef = {
     "intercept": -2.62182835,
     "job_blue_collar": -0.28880525,
@@ -62,9 +62,9 @@ coef = {
     "month_nov": -0.89490039,
     "month_oct": 0.86920519,
     "month_sep": 0.85300411,
-    "duration": 0.00420852,  # Assuming duration is a continuous variable
-    "campaign": -0.08815015,  # Assuming campaign is a continuous variable
-    "previous": 0.03258026,  # Assuming previous is a continuous variable
+    "duration": 0.00420852,  
+    "campaign": -0.08815015,  
+    "previous": 0.03258026,  
     "poutcome_other": 0.26508658,
     "poutcome_success": 2.28493062,
     "poutcome_unknown": -0.01619976
@@ -193,7 +193,6 @@ def logistic_regression_prediction(row, coefficients):
     return probability, prediction
 
 # Function for bulk predictions
-# Function for bulk predictions
 def bulk_prediction():
     st.subheader("Bulk Upload for Predictions")
     uploaded_file = st.file_uploader("Upload your input Excel file", type=["csv"])
@@ -234,9 +233,6 @@ def bulk_prediction():
                 st.markdown('Based on the predictions, there are no individuals to target at this time.')
         except Exception as e:
             st.error(f"Error processing file: {e}")
-
-# Rest of your code
-
 
 # Sidebar for prediction type selection
 prediction_type = st.sidebar.radio(
