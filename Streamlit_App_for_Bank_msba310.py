@@ -144,7 +144,7 @@ def individual_prediction():
         probability = 1 / (1 + np.exp(-score))
 
         # Apply threshold
-        prediction = 'Yes' if probability > 0.11 else 'No'
+        prediction = 'Yes, target this customer' if probability > 0.15 else 'No, target another customer'
 
         # Display the result in a visually distinct section
         st.markdown('---')
@@ -180,7 +180,7 @@ def logistic_regression_prediction(row, coefficients):
     probability = 1 / (1 + np.exp(-score))
 
     # Apply threshold
-    prediction = 'Yes' if probability > 0.11 else 'No'
+    prediction = 'Yes' if probability > 0.15 else 'No'
 
     return probability, prediction
 
