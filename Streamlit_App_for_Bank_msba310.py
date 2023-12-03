@@ -151,16 +151,8 @@ def individual_prediction():
         st.markdown('## 📊 Prediction Result')
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.metric(label="Predicted Probability", value=f"{probability:.2f}")
             st.metric(label="Prediction", value=prediction)
-        with col2:
-            st.markdown("### Interpretation:")
-            st.markdown("""
-            - A **probability greater than 0.11** leads to a **Yes** prediction.
-            - A **probability less than or equal to 0.11** results in a **No** prediction.
-            - This model assesses various factors to make its prediction.
-            """)
-
+      
 # Function to predict using logistic regression
 def logistic_regression_prediction(row, coefficients):
     input_values = {
