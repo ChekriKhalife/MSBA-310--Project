@@ -144,7 +144,7 @@ def individual_prediction():
         probability = 1 / (1 + np.exp(-score))
 
         # Apply threshold
-        prediction = 'Yes, target this customer' if probability > 0.15 else 'No, target another customer'
+        prediction = 'Yes, Contact' if probability > 0.15 else 'No, don't contact'
 
         # Display the result in a visually distinct section
         st.markdown('---')
