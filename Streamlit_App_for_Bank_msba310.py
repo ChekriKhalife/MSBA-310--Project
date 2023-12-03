@@ -201,7 +201,7 @@ def bulk_prediction():
     if uploaded_file is not None:
         try:
             # Read the Excel file into a pandas DataFrame
-            df = pd.read_excel(uploaded_file)
+            df = pd.read_csv(uploaded_file)
 
             # Predict for each row in the DataFrame
             predictions = df.apply(lambda x: logistic_regression_prediction(x, coef), axis=1)
