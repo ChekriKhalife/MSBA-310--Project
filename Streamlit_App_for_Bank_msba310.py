@@ -200,8 +200,17 @@ def bulk_prediction():
 
     if uploaded_file is not None:
         try:
-            # Read the Excel file into a pandas DataFrame
-            df = pd.read_csv(uploaded_file)
+        # Attempt to read the CSV file with different encodings if default 'utf-8' fails
+            try:
+                df = pd.read_csv(uploaded_file, encoding='utf-8')
+            except UnicodeDecodeError:
+                try:
+                    df = pd.read_csv(uploaded_file, encoding='latin1')
+                except UnicodeDecodeError:
+                    try:
+                        df = pd.read_csv(uploaded_file, encoding='ISO-8859-1')
+                    except UnicodeDecodeError:
+                        df = pd.read_csv(uploaded_file, encoding='cp1252')
 
             # Predict for each row in the DataFrame
             predictions = df.apply(lambda x: logistic_regression_prediction(x, coef), axis=1)
