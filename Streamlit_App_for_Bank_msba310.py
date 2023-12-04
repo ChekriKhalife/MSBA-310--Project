@@ -20,9 +20,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title and introduction
-st.title("Predictive Analysis using Logistic Regression")
+st.title("Markedict - Predictive Analysis using Logistic Regression")
 st.markdown("""
-    This application uses a logistic regression model to predict the outcome based on the provided inputs.
+    This application, Markedict, uses a logistic regression model to predict the outcome based on the provided inputs.
 """)
 
 # Logistic Regression Coefficients
