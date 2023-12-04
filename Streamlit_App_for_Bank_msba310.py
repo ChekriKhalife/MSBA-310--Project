@@ -4,6 +4,8 @@ import pandas as pd
 
 # Set page layout
 st.set_page_config(page_title="Logistic Regression Prediction", layout="wide")
+image = Image.open('Markedict.jpg')
+st.image(image, use_column_width=True)
 # Custom CSS
 st.markdown("""
 <style>
