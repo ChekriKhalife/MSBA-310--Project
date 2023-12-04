@@ -228,6 +228,7 @@ def bulk_prediction():
             st.error(f"Error processing file: {e}")
 
 # Sidebar for prediction type selection
+st.sidebar.image(image, width=300)
 prediction_type = st.sidebar.radio(
     "Choose Prediction Type",
     ('Individual Prediction', 'Bulk Prediction', 'About the Model')
