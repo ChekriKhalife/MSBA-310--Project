@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-
+from PIL import Image
 # Set page layout
 st.set_page_config(page_title="Logistic Regression Prediction", layout="wide")
 image = Image.open('Markedict.jpg')
