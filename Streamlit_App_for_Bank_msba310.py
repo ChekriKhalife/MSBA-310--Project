@@ -23,7 +23,6 @@ st.markdown("""
 st.title("Predictive Analysis using Logistic Regression")
 st.markdown("""
     This application uses a logistic regression model to predict the outcome based on the provided inputs.
-    Adjust the input parameters on the left to see the predictions.
 """)
 
 # Logistic Regression Coefficients
